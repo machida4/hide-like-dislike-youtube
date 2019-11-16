@@ -34,7 +34,7 @@ hide_like_dislike();
 
 function ObserveStream(){
   let observer = new MutationObserver(hide_like_dislike);
-  observer.observe(document.getElementsByClassName('style-scope ytd-toggle-button-renderer style-text')[0], {
+  observer.observe(document.getElementsByClassName('style-scope ytd-toggle-button-renderer')[0], {
       attributes: true,
       characterData:  true
   });
