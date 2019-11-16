@@ -1,21 +1,6 @@
 // https://qiita.com/mdstoy/items/9866544e37987337dc79
 // https://qiita.com/hal1437/items/59d7a55124027d2ff492
 
-// <yt-formatted-string id="text" class="style-scope ytd-toggle-button-renderer style-default-active">189</yt-formatted-string>
-// <yt-formatted-string id="text" class="style-scope ytd-toggle-button-renderer style-text">8</yt-formatted-string>
-{/* <ytd-sentiment-bar-renderer id="sentiment" class="style-scope ytd-video-primary-info-renderer" activated_="" style="width: 140px;">
-    
-    <div id="container" class="style-scope ytd-sentiment-bar-renderer">
-      <div id="like-bar" class="style-scope ytd-sentiment-bar-renderer" style="width: 98%;"></div>
-    </div>
-    <paper-tooltip position="top" class="style-scope ytd-sentiment-bar-renderer" role="tooltip" tabindex="-1"><!--css-build:shady-->
-
-    <div id="tooltip" class="hidden style-scope paper-tooltip">
-      1,433 / 18
-    </div>
-</paper-tooltip>
-  </ytd-sentiment-bar-renderer> */}
-
 function hide_like_dislike(){
   let first_targets = document.getElementsByClassName('style-scope ytd-toggle-button-renderer style-text');
   let second_targets = document.getElementsByClassName('style-scope ytd-toggle-button-renderer style-default-active');
