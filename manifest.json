@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Hide Like/Dislike Youtube",
+  "version": "1",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["hide-like-dislike.js"]
+    }
+  ]
+}
