@@ -1,3 +1,6 @@
+// https://qiita.com/mdstoy/items/9866544e37987337dc79
+// https://qiita.com/hal1437/items/59d7a55124027d2ff492
+
 // <yt-formatted-string id="text" class="style-scope ytd-toggle-button-renderer style-default-active">189</yt-formatted-string>
 // <yt-formatted-string id="text" class="style-scope ytd-toggle-button-renderer style-text">8</yt-formatted-string>
 {/* <ytd-sentiment-bar-renderer id="sentiment" class="style-scope ytd-video-primary-info-renderer" activated_="" style="width: 140px;">
