@@ -16,7 +16,7 @@
 function hide_like_dislike(){
   let first_targets = document.getElementsByClassName('style-scope ytd-toggle-button-renderer style-text');
   let second_targets = document.getElementsByClassName('style-scope ytd-toggle-button-renderer style-default-active');
-  let like_bar = document.getElementById('like-bar');
+  // let like_bar = document.getElementById('like-bar');
   // for (let i = 0; i < elements.length; i++){
   //   if (elements[i].id === "text"){
   //     elements[i].innerHTML = '0000';
@@ -28,20 +28,20 @@ function hide_like_dislike(){
   while(second_targets.length != 0){
     second_targets[0].parentNode.removeChild(second_targets[0]);
   }
-  like_bar.parentNode.removeChild(like_bar);
+  // like_bar.parentNode.removeChild(like_bar);
 }
 hide_like_dislike();
 
-// function ObserveStream(){
-//   let observer = new MutationObserver(hide_like_dislike);
-//   observer.observe(document.getElementsByClassName('style-scope ytd-toggle-button-renderer')[0], {
-//       attributes: true,
-//       characterData:  true
-//   });
-//   hide_like_dislike();
-// } 
+function ObserveStream(){
+  let observer = new MutationObserver(hide_like_dislike);
+  observer.observe(document.getElementsByClassName('style-scope ytd-toggle-button-renderer style-text')[0], {
+      attributes: true,
+      characterData:  true
+  });
+  hide_like_dislike();
+} 
 
-// let observer = new MutationObserver(ObserveStream);
-// observer.observe(document.getElementsByTagName("body")[0], {
-//   attributes: true
-// });
+let observer = new MutationObserver(ObserveStream);
+observer.observe(document.getElementsByTagName("body")[0], {
+  attributes: true
+});
